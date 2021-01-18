@@ -54,125 +54,125 @@
 
 2. portfolio.css
     ``` css
-        * {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            box-sizing: border-box;
-        }
+    * {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    }
 
-        /*****header*****/
-        header {
-            background-color: #000;
-        }
+    /*****header*****/
+    header {
+        background-color: #000;
+    }
 
-        .header__title {
-            max-width: 1080px;
-            line-height: 120px;
-            margin: 0px auto;
-            padding-left: 40px;
-        }
+    .header__title {
+        max-width: 1080px;
+        line-height: 120px;
+        margin: 0px auto;
+        padding-left: 40px;
+    }
 
-        .header__title h1 {
-            color: #fff;
-            font-size: 40px;
-            font-weight: bold;
-            padding-left: 40px;
-        }
+    .header__title h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        padding-left: 40px;
+    }
 
-        /*****navbar*****/
-        .nav {
-            background-color: #fff;
+    /*****navbar*****/
+    .nav {
+        background-color: #fff;
 
-        }
+    }
 
-        .nav__ul {
-            display: flex;
-            max-width: 1000px;
-            margin: 0px auto;
-            padding: 40px 40px 0px 40px;
-        }
+    .nav__ul {
+        display: flex;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 40px 40px 0px 40px;
+    }
 
-        .nav__li {
-            border: 1px solid #d1d1d1;
-            line-height: 33px;
-            text-align: center;
-            font-size: 16px;
-        }
+    .nav__li {
+        border: 1px solid #d1d1d1;
+        line-height: 33px;
+        text-align: center;
+        font-size: 16px;
+    }
 
-        .nav__li:nth-child(2) {
-            margin: 0px 14px;
-        }
+    .nav__li:nth-child(2) {
+        margin: 0px 14px;
+    }
 
-        .nav__li:hover {
-            border: #454545;
-            font-weight: bold;
-        }
+    .nav__li:hover {
+        border: #454545;
+        font-weight: bold;
+    }
 
-        /*****section*****/
-        .section {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px;
-        }
+    /*****section*****/
+    .section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+    }
 
-        .section__title {
-            font-size: 20px;
-            color: #000;
-            font-weight: bold;
-            padding-bottom: 20px;
-        }
+    .section__title {
+        font-size: 20px;
+        color: #000;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
 
-        .section__line {
-            border: 1px solid #454545;
-        }
+    .section__line {
+        border: 1px solid #454545;
+    }
 
-        .section__table {
-            margin-top: 30px;
-        }
+    .section__table {
+        margin-top: 30px;
+    }
 
-        .section__table-title {
-            border: 1px solid #d1d1d1;
-            background: #f7f7f7;
-            line-height: 46px;
-            font-size: 16px;
-            color: #333;
-            font-weight: bold;
-            padding-left: 15px;
-        }
+    .section__table-title {
+        border: 1px solid #d1d1d1;
+        background: #f7f7f7;
+        line-height: 46px;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        padding-left: 15px;
+    }
 
-        .section__table-content {
-            border: 1px solid #d1d1d1;
-            border-top: none;
-            background: #fff;
-            line-height: 60px;
-            font-size: 12px;
-            color: #000;
-            font-weight: bold;
-            padding: 30px;
-        }
+    .section__table-content {
+        border: 1px solid #d1d1d1;
+        border-top: none;
+        background: #fff;
+        line-height: 60px;
+        font-size: 12px;
+        color: #000;
+        font-weight: bold;
+        padding: 30px;
+    }
 
-        .footer__line {
-            border: 1px solid #d1d1d1;
-        }
+    .footer__line {
+        border: 1px solid #d1d1d1;
+    }
 
-        footer {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 40px;
-        }
+    footer {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 40px;
+    }
 
-        .footer__text {
-            text-align: center;
-            font-size: 12px;
-            color: #999;
-        }
+    .footer__text {
+        text-align: center;
+        font-size: 12px;
+        color: #999;
+    }
 
-        .footer__copyright {
-            text-align: center;
-            font-size: 12px;
-            color: #000;
-        }
+    .footer__copyright {
+        text-align: center;
+        font-size: 12px;
+        color: #000;
+    }
     ```
 
 ## 2021/01/16
