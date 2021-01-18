@@ -3,177 +3,177 @@
 ## 2021/01/18
 ### < 부스트캠프 Project A-1>
 1. portfolio.html
-``` html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프로젝트 A-1</title>
-    <link rel="stylesheet" href="./css/portfolio.css">
-</head>
-<body>
-    <header>
-        <div class="header__title">
-            <h1>포트폴리오</h1>
-        </div>
-    </header>
+    ``` html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>프로젝트 A-1</title>
+        <link rel="stylesheet" href="./css/portfolio.css">
+    </head>
+    <body>
+        <header>
+            <div class="header__title">
+                <h1>포트폴리오</h1>
+            </div>
+        </header>
 
-    <div class="nav">
-        <div class="nav__ul">
-            <div class="nav__li">테이블 요소</div>
-            <div class="nav__li">폼 요소</div>
-            <div class="nav__li">리스트 요소</div>
+        <div class="nav">
+            <div class="nav__ul">
+                <div class="nav__li">테이블 요소</div>
+                <div class="nav__li">폼 요소</div>
+                <div class="nav__li">리스트 요소</div>
+            </div>
         </div>
-    </div>
 
-    <div class="section">
-        <h2 class="section__title">구성요소</h2>
-        <hr class="section__line">
-        <div class="section__table">
-            <div class="section__table-title"><span>테이블 요소</span></div>
-            <div class="section__table-content"><span>콘텐츠 영역</span></div>
+        <div class="section">
+            <h2 class="section__title">구성요소</h2>
+            <hr class="section__line">
+            <div class="section__table">
+                <div class="section__table-title"><span>테이블 요소</span></div>
+                <div class="section__table-content"><span>콘텐츠 영역</span></div>
+            </div>
+            <div class="section__table">
+                <div class="section__table-title"><span>폼 요소</span></div>
+                <div class="section__table-content"><span>콘텐츠 영역</span></div>
+            </div>
+            <div class="section__table">
+                <div class="section__table-title"><span>리스트 요소</span></div>
+                <div class="section__table-content"><span>콘텐츠 영역</span></div>
+            </div>
         </div>
-        <div class="section__table">
-            <div class="section__table-title"><span>폼 요소</span></div>
-            <div class="section__table-content"><span>콘텐츠 영역</span></div>
-        </div>
-        <div class="section__table">
-            <div class="section__table-title"><span>리스트 요소</span></div>
-            <div class="section__table-content"><span>콘텐츠 영역</span></div>
-        </div>
-    </div>
-    <hr class="footer__line">
-    <footer>
-        <p class="footer__text">주소: 경기도 성남시 분당구, E-MAIL: honggildong@naver.com</p>
-        <p class="footer__copyright">Copyright Hong Gil Dong. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
-```
+        <hr class="footer__line">
+        <footer>
+            <p class="footer__text">주소: 경기도 성남시 분당구, E-MAIL: honggildong@naver.com</p>
+            <p class="footer__copyright">Copyright Hong Gil Dong. All Rights Reserved.</p>
+        </footer>
+    </body>
+    </html>
+    ```
 
 2. portfolio.css
-``` css
-* {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+    ``` css
+        * {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-/*****header*****/
-header {
-    background-color: #000;
-}
+        /*****header*****/
+        header {
+            background-color: #000;
+        }
 
-.header__title {
-    max-width: 1080px;
-    line-height: 120px;
-    margin: 0px auto;
-    padding-left: 40px;
-}
+        .header__title {
+            max-width: 1080px;
+            line-height: 120px;
+            margin: 0px auto;
+            padding-left: 40px;
+        }
 
-.header__title h1 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    padding-left: 40px;
-}
+        .header__title h1 {
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            padding-left: 40px;
+        }
 
-/*****navbar*****/
-.nav {
-    background-color: #fff;
-    
-}
+        /*****navbar*****/
+        .nav {
+            background-color: #fff;
 
-.nav__ul {
-    display: flex;
-    max-width: 1000px;
-    margin: 0px auto;
-    padding: 40px 40px 0px 40px;
-}
+        }
 
-.nav__li {
-    border: 1px solid #d1d1d1;
-    line-height: 33px;
-    text-align: center;
-    font-size: 16px;
-}
+        .nav__ul {
+            display: flex;
+            max-width: 1000px;
+            margin: 0px auto;
+            padding: 40px 40px 0px 40px;
+        }
 
-.nav__li:nth-child(2) {
-    margin: 0px 14px;
-}
+        .nav__li {
+            border: 1px solid #d1d1d1;
+            line-height: 33px;
+            text-align: center;
+            font-size: 16px;
+        }
 
-.nav__li:hover {
-    border: #454545;
-    font-weight: bold;
-}
+        .nav__li:nth-child(2) {
+            margin: 0px 14px;
+        }
 
-/*****section*****/
-.section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px;
-}
+        .nav__li:hover {
+            border: #454545;
+            font-weight: bold;
+        }
 
-.section__title {
-    font-size: 20px;
-    color: #000;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
+        /*****section*****/
+        .section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+        }
 
-.section__line {
-    border: 1px solid #454545;
-}
+        .section__title {
+            font-size: 20px;
+            color: #000;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
 
-.section__table {
-    margin-top: 30px;
-}
+        .section__line {
+            border: 1px solid #454545;
+        }
 
-.section__table-title {
-    border: 1px solid #d1d1d1;
-    background: #f7f7f7;
-    line-height: 46px;
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
-    padding-left: 15px;
-}
+        .section__table {
+            margin-top: 30px;
+        }
 
-.section__table-content {
-    border: 1px solid #d1d1d1;
-    border-top: none;
-    background: #fff;
-    line-height: 60px;
-    font-size: 12px;
-    color: #000;
-    font-weight: bold;
-    padding: 30px;
-}
+        .section__table-title {
+            border: 1px solid #d1d1d1;
+            background: #f7f7f7;
+            line-height: 46px;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+            padding-left: 15px;
+        }
 
-.footer__line {
-    border: 1px solid #d1d1d1;
-}
+        .section__table-content {
+            border: 1px solid #d1d1d1;
+            border-top: none;
+            background: #fff;
+            line-height: 60px;
+            font-size: 12px;
+            color: #000;
+            font-weight: bold;
+            padding: 30px;
+        }
 
-footer {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 40px;
-}
+        .footer__line {
+            border: 1px solid #d1d1d1;
+        }
 
-.footer__text {
-    text-align: center;
-    font-size: 12px;
-    color: #999;
-}
+        footer {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 40px;
+        }
 
-.footer__copyright {
-    text-align: center;
-    font-size: 12px;
-    color: #000;
-}
-```
+        .footer__text {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .footer__copyright {
+            text-align: center;
+            font-size: 12px;
+            color: #000;
+        }
+    ```
 
 ## 2021/01/16
 ### < My FirstMap >
