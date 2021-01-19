@@ -208,5 +208,186 @@
         * css파일에서 bow-shadow 기능을 사용하여 효과를 준다.
         * 현재 위치 버튼을 계속 누르게 되면 마커가 계속 생성되는 문제를 수정한다.
 
+8. index.ejs
+    ``` javascript
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  minimum-scale=1.0, user-scalable=no">
+      <title>수제버거 맛집지도</title>
+      <link rel="stylesheet" href="/stylesheets/style.css">
+      <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/ maps.js?ncpClientId=jax23rqfc5"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/    aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+      <div id="navbar">Hot Burger Place </div>
+      <div id="infoBox">
+        <div id="infoTitle">현재날짜</div>
+        <div id="infoContent">2021.01.15</div>
+      </div>
+
+      <div id="current">현재 위치</div>
+
+      <div id="map" style="width:100%;height:100vh;"></div>
+
+      <script type="text/javascript" src="/data/data.js"></script>
+      <script>
+        var mapOptions = {
+          center: new naver.maps.LatLng(37.3595704, 127.105399),
+          zoom: 10
+        };
+
+        var map = new naver.maps.Map('map', mapOptions);
+
+        var markerList = [];
+        var infowindowList = [];
+
+        for (var i in data) {
+          var target = data[i];
+          var latlng = new naver.maps.LatLng(target.lat, target.lng);
+          marker = new naver.maps.Marker({
+            map: map,
+            position: latlng,
+            icon: {
+              content: "<div class='marker'></div>",
+              anchor: new naver.maps.Point(12, 12)
+            }
+          });
+
+          var content = `<div class='infowindow_wrap'>
+            <div class='infowindow_title'>${target.title}</div>
+            <div class='infowindow_content'>${target.content}</div>
+            <div class='infowindow_date'>${target.date}</div>
+          </div>`
+
+          var infowindow = new naver.maps.InfoWindow({
+            content: content,
+            backgroundColor: "#00ff0000",
+            borderColor: "#00ff0000",
+            anchorSize: new naver.maps.Size(0,0)
+          });
+
+          markerList.push(marker);
+          infowindowList.push(infowindow);
+        }
+        for (var i=0; i<markerList.length; i++) {
+          naver.maps.Event.addListener(map, "click", clickMap(i));
+          naver.maps.Event.addListener(markerList[i], "click", getClickHandler(i));
+        }
+
+        function getClickHandler(i) {
+          return function() {
+            var marker = markerList[i];
+            var infoWindow = infowindowList[i];
+
+            if(infoWindow.getMap()) {
+              infoWindow.close();
+            } else {
+              infoWindow.open(map, marker);
+            }
+          }
+        }
+
+        function clickMap(i) {
+          return function() {
+            var infoWindow = infowindowList[i];
+            infoWindow.close();
+          }
+        }
+
+        let currentUse = true;
+
+
+        $('#current').click(() => {
+      if('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+          const latlng = new naver.maps.LatLng(lat, lng);
+          if (currentUse) {
+            marker = new naver.maps.Marker({
+            map: map,
+            position: latlng,
+            icon: {
+              content: '<img class="pulse" draggable="false" unselectable="on"  src="https://myfirstmap.s3.ap-northeast-2.amazonaws.com/circle.png">',
+              anchor: new naver.maps.Point(11,11)
+            }
+          });
+          currentUse = false;
+          }
+          map.setZoom(16, false);
+          map.panTo(latlng);
+        });
+      } else {
+        alert("위치정보 사용 불가능");
+      }
+    });
+
+      </script>
+    </body>
+
+    </html>
+     ```
+
+10. data.js
+    ``` javascript
+    var data = [
+        {
+            title: "다운타우너버거",
+            content: "해시브라운 버거와 갈릭버터 프라이, 고구마프라이가 맛있는 곳   (사실 다 맛있당ㅠㅠ)",
+            date: "2020-01-15",
+            lat: 37.52560212243021,
+            lng: 127.03864378904129
+        },
+        {
+            title: "자코비버거",
+            content: "내장파괴 버거로 유명한 곳",
+            date: "2020-01-15",
+            lat: 37.542853794702054,
+            lng: 126.98773688112772
+        },
+        {
+            title: "더백푸드트럭",
+            content: "모졔렐라 치즈버거와 칠리치즈프라이가 맛있는 곳",
+            date: "2020-01-15",
+            lat: 37.54882500993703,
+            lng: 126.98373996634925
+        },
+        {
+            title: "블리스버거",
+            content: "더블치즈 버거와 어니언링이 맛있는 곳",
+            date: "2020-01-15",
+            lat: 37.49535149052015,
+            lng: 127.12181925728626
+        },
+        {
+            title: "브루클린 더 버거 조인트",
+            content: "가끔 쉑쉑 땡기는 데 강남까지 가기 귀찮을 때",
+            date: "2020-01-15",
+            lat: 37.51469316142942, 
+            lng: 127.10297987423127
+        },
+        {
+            title: "더 페이머스 버거",
+            content: "로꼬의 햄버거가게",
+            date: "2020-01-15",
+            lat: 37.525457063322, 
+            lng: 127.01961912175331
+        },
+        {
+            title: "버거파크",
+            content: "햄버거 양이 너무 적지만 맛있는 곳",
+            date: "2020-01-15",
+            lat: 37.59195892145413,
+            lng: 127.0176273823262
+        }
+    ]
+    ```
+
 ## 2021/01/14
 * git 사용법
