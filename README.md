@@ -1,5 +1,30 @@
 # Today I Learned :hamster:
 
+## 2021/03/23 ~ 2021/03/24
+### <candlebee project - 3주차>
+1. HTML + CSS 작업
+    - login
+    - find_id, find_id2, find_pw, find_pw2
+
+## 2021/03/13 ~ 2021/03/21
+### <candlebee project - 2주차>
+1. 일정표 세분화하여 재작성
+2. oven을 이용한 프로토 제작
+3. 페이지 디자인
+    - start
+    - login
+    - join
+    - find_id, find_id2, find_pw, find_pw2
+    - choice_list, choice_emotion
+    - mainpage
+    - contents
+    - sidebar
+    - profile
+    - change_pw, change_nickname, change_list, change_emotion
+    - dairy, calendar
+    - setting, delete_account, delete_complete
+
+
 ## 2021/01/18
 ### < 부스트캠프 Project A-1>
 1. portfolio.html
