@@ -1,5 +1,5 @@
 # Today I Learned :hamster:
-## 2021/06/30
+## 2021/07/07
 ### **<RENEWAL-urbandecay project - 2day>**
 1. 세부적인 리뉴얼 기획 구상
     - 쇼핑몰의 하단 부분 구조화
