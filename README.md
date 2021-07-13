@@ -1,13 +1,139 @@
 # Today I Learned :hamster:
+## 2021/06/30
+### **<RENEWAL-urbandecay project - 2day>**
+1. 세부적인 리뉴얼 기획 구상
+    - 쇼핑몰의 하단 부분 구조화
+        - 하단 부분에 몰려있는 메뉴들이 가독성이 떨어진다 생각하여 구조화
+        - "더보기" 로 표시된 브랜드 스토리 (about us) 를 상단 메뉴에 추가
+        - 하단 부분에 난데 없는 기능들을 전부 삭제 후 마이페이지에 추가할 계획
+    - 반복적으로 나오는 이벤트 내용들을 한 번만 나오도록 구상
+    - 메인페이지에서 공식 온라인 몰 혜택 내용을 강조할 수 있도록 구상
+    
+2. index.html의 footer작업
+3. css 파일들의 component화
+4. 슬라이더 라이브러리 사용하여 효과 적용
+
+
+## 2021/06/30
+### **<RENEWAL-urbandecay project - 1day>**
+1. 프로젝트 기획하기
+    - 기존 온라인 쇼핑몰 (https://www.urbandecay.co.kr/) 을 리뉴얼
+    - 매주 수요일마다 작업
+2. index.html 레이아웃 잡기
+3. css 파일들의 component화
+4. 슬라이더 라이브러리 사용하여 효과 적용
+
+
+## 2021/05/28 ~ 2021/06/11
+### **<candlebee project - 15주차>**
+1. HTML + CSS + JS 수정 및 보완 작업
+    - 모든 파일 정리
+2. 기말 발표 준비
+    - ppt 제작 및 발표 준비
+3. 프로젝트 시연 영상 녹화
+
+
+## 2021/05/28 ~ 2021/06/03
+### **<candlebee project - 14주차>**
+1. HTML + CSS + JS 수정 및 보완 작업
+    - sidebar size
+    - play page background
+    - diary calendar
+
+
+## 2021/05/23 ~ 2021/05/25
+### **<candlebee project - 13주차>**
+1. HTML + CSS 작업
+    - 콘텐츠 관리 및 업로드 page 
+
+
+## 2021/05/21 ~ 2021/05/22
+### **<candlebee project - 13주차>**
+1. 관리자 페이지 구상
+    - 회원관리
+    - 콘텐츠 관리 및 업로드
+
+
+## 2021/05/15 ~ 2021/05/17
+### **<candlebee project - 12주차>**
+1. HTML + CSS 작업
+    - 회원 탈퇴 페이지
+    - 구글 소셜 로그인 버튼
+2. 12주 동안 작업한 파일들 정리
+
+
+## 2021/05/08 ~ 2021/05/10
+### **<candlebee project - 11주차>**
+1. HTML + CSS 작업
+    - history page
+    - setting page
+    - sidebar 보완
+
+
+## 2021/05/01 ~ 2021/05/05
+### **<candlebee project - 10주차>**
+1. HTML + CSS + JS 작업
+    - profile page
+    - sidebar
+2. HTML 수정 작업
+    - join page 비밀번호 입력 부분 수정
+
+
+## 2021/04/23 ~ 2021/04/28
+### **<candlebee project - 9주차>**
+1. CSS + js 수정 작업
+    - play page 댓글 부분 보완
+2. HTML + CSS 작업
+    - diary page 작업 (calendar, today)
+3. JS 작업
+    - calendar 기능 작업
+
+
+## 2021/04/18
+### **<candlebee project - 8주차>**
+1. HTML + CSS + js 수정 작업
+    - 8주차 까지 작업 보완 및 완성도 높이기
+    - 검색엔진 기능 보완
+2. 중간 발표 준비
+    - 문서 정리 및 보완
+    - ppt 제작 및 발표 준비
+
+
+## 2021/04/12 ~ 2021/04/15
+### **<candlebee project - 7주차>**
+1. CSS + js 수정 작업
+    - 최초 로그인 시 선택페이지 수정
+    - 검색엔진 js 파일 수정
+
+
+## 2021/04/05 ~ 2021/04/08
+### **<candlebee project - 6주차>**
+1. HTML + CSS 작업
+    - 최초 로그인 시 선택 페이지 (감정 선택, 관심사 선택)
+    - main page 완성
+    - play page 완성
+
+
+## 2021/03/27 ~ 2021/04/01
+### **<candlebee project - 5주차>**
+1. HTML + CSS 작업
+    - main page layout
+    - main page css
+2. CSS 수정 작업
+    - join page css 수정
+    - find page css 수정
+3. 검색엔진 js 작업
+
 
 ## 2021/03/23 ~ 2021/03/24
-### <candlebee project - 3주차>
+### **<candlebee project - 4주차>**
 1. HTML + CSS 작업
     - login
     - find_id, find_id2, find_pw, find_pw2
 
+
 ## 2021/03/13 ~ 2021/03/21
-### <candlebee project - 2주차>
+### **<candlebee project - 3주차>**
 1. 일정표 세분화하여 재작성
 2. oven을 이용한 프로토 제작
 3. 페이지 디자인
@@ -23,6 +149,15 @@
     - change_pw, change_nickname, change_list, change_emotion
     - dairy, calendar
     - setting, delete_account, delete_complete
+
+
+## 2021/03/04 ~ 2021/03/21
+### **<candlebee project - 1,2주차>**
+1. 문서작업 및 미팅
+    - 일정표
+    - 스토리보드
+    - 기능정의서
+    - 기획서
 
 
 ## 2021/01/18
@@ -416,3 +551,8 @@
 
 ## 2021/01/14
 * git 사용법
+1. git bash -> git init
+2. git remote add origin new reposi 주소
+3. vs code -> new terminal -> git add .
+4. git commit -m "커밋내용"
+5. git push origin master 혹은 git push -u origin master
